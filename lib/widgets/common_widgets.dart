@@ -22,7 +22,7 @@ class LoadingIndicator extends StatelessWidget {
           width: 40,
           child: CircularProgressIndicator(
             strokeWidth: 3,
-            valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryGreen),
+            valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryOrange),
           ),
         ),
         const SizedBox(height: 16),
@@ -67,13 +67,13 @@ class ErrorState extends StatelessWidget {
             width: 80,
             height: 80,
             decoration: const BoxDecoration(
-              color: AppColors.paleGreen,
+              color: AppColors.paleOrange,
               shape: BoxShape.circle,
             ),
             child: const Icon(
               Icons.cloud_off,
               size: 40,
-              color: AppColors.primaryGreen,
+              color: AppColors.primaryOrange,
             ),
           ),
           const SizedBox(height: 16),
@@ -101,7 +101,7 @@ class ErrorState extends StatelessWidget {
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 12),
                 decoration: BoxDecoration(
-                  color: AppColors.primaryGreen,
+                  color: AppColors.primaryOrange,
                   borderRadius: BorderRadius.circular(999),
                 ),
                 child: Text(
@@ -149,10 +149,10 @@ class EmptyState extends StatelessWidget {
               width: 100,
               height: 100,
               decoration: const BoxDecoration(
-                color: AppColors.paleGreen,
+                color: AppColors.paleOrange,
                 shape: BoxShape.circle,
               ),
-              child: Icon(icon, size: 48, color: AppColors.primaryGreen),
+              child: Icon(icon, size: 48, color: AppColors.primaryOrange),
             ),
             const SizedBox(height: 24),
             Text(
@@ -180,7 +180,7 @@ class EmptyState extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 12),
                   decoration: BoxDecoration(
-                    color: AppColors.primaryGreen,
+                    color: AppColors.primaryOrange,
                     borderRadius: BorderRadius.circular(999),
                   ),
                   child: Text(
@@ -232,7 +232,7 @@ class SectionHeader extends StatelessWidget {
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(
-                  color: AppColors.paleGreen,
+                  color: AppColors.paleOrange,
                   borderRadius: BorderRadius.circular(999),
                 ),
                 child: Text(
@@ -240,7 +240,7 @@ class SectionHeader extends StatelessWidget {
                   style: GoogleFonts.poppins(
                     fontSize: 12,
                     fontWeight: FontWeight.w500,
-                    color: AppColors.primaryGreen,
+                    color: AppColors.primaryOrange,
                   ),
                 ),
               ),

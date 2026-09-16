@@ -49,7 +49,7 @@ class BookCard extends StatelessWidget {
                   Container(
                     height: height ?? 185,
                     width: double.infinity,
-                    color: AppColors.paleGreen,
+                    color: AppColors.paleOrange,
                     child: book.thumbnail != null
                         ? CachedNetworkImage(
                             imageUrl: book.thumbnail!,
@@ -57,7 +57,7 @@ class BookCard extends StatelessWidget {
                             placeholder: (context, url) => const Center(
                               child: CircularProgressIndicator(
                                 strokeWidth: 2,
-                                valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryGreen),
+                                valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryOrange),
                               ),
                             ),
                             errorWidget: (context, url, error) => _buildPlaceholder(),
@@ -73,7 +73,7 @@ class BookCard extends StatelessWidget {
                         child: Container(
                           padding: const EdgeInsets.all(6),
                           decoration: BoxDecoration(
-                            color: book.isSaved ? AppColors.primaryGreen : AppColors.white.withOpacity(0.92),
+                            color: book.isSaved ? AppColors.primaryOrange : AppColors.white.withOpacity(0.92),
                             shape: BoxShape.circle,
                             boxShadow: [
                               BoxShadow(
@@ -85,7 +85,7 @@ class BookCard extends StatelessWidget {
                           ),
                           child: Icon(
                             book.isSaved ? Icons.bookmark : Icons.bookmark_border,
-                            color: book.isSaved ? AppColors.white : AppColors.primaryGreen,
+                            color: book.isSaved ? AppColors.white : AppColors.primaryOrange,
                             size: 16,
                           ),
                         ),
@@ -131,7 +131,7 @@ class BookCard extends StatelessWidget {
 
   Widget _buildPlaceholder() {
     return Container(
-      color: AppColors.paleGreen,
+      color: AppColors.paleOrange,
       child: Center(
         child: Container(
           width: 56,
@@ -143,7 +143,7 @@ class BookCard extends StatelessWidget {
           child: const Icon(
             Icons.menu_book,
             size: 28,
-            color: AppColors.primaryGreen,
+            color: AppColors.primaryOrange,
           ),
         ),
       ),
@@ -190,7 +190,7 @@ class BookListTile extends StatelessWidget {
               child: Container(
                 width: 60,
                 height: 80,
-                color: AppColors.paleGreen,
+                color: AppColors.paleOrange,
                 child: book.thumbnail != null
                     ? CachedNetworkImage(
                         imageUrl: book.thumbnail!,
@@ -251,7 +251,7 @@ class BookListTile extends StatelessWidget {
                         onTap: onSaveToggle,
                         child: Icon(
                           book.isSaved ? Icons.bookmark : Icons.bookmark_border,
-                          color: book.isSaved ? AppColors.primaryGreen : AppColors.mediumGray,
+                          color: book.isSaved ? AppColors.primaryOrange : AppColors.mediumGray,
                         ),
                       )
                     : const SizedBox.shrink()),
@@ -263,7 +263,7 @@ class BookListTile extends StatelessWidget {
 
   Widget _buildSmallPlaceholder() {
     return const Center(
-      child: Icon(Icons.menu_book, size: 24, color: AppColors.primaryGreen),
+      child: Icon(Icons.menu_book, size: 24, color: AppColors.primaryOrange),
     );
   }
 }

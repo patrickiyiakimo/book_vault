@@ -134,7 +134,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: AppColors.primaryGreen.withOpacity(0.3),
+                      color: AppColors.primaryOrange.withOpacity(0.3),
                       blurRadius: 20,
                       offset: const Offset(0, 8),
                     ),
@@ -155,7 +155,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           style: GoogleFonts.poppins(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
-                            color: AppColors.primaryGreen,
+                            color: AppColors.primaryOrange,
                           ),
                         ),
                       ),
@@ -193,7 +193,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               style: GoogleFonts.poppins(
                                 fontSize: 11,
                                 fontWeight: FontWeight.w600,
-                                color: AppColors.darkGreen,
+                                color: AppColors.darkOrange,
                               ),
                             ),
                           ),
@@ -220,7 +220,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       icon: Icons.history,
                       count: _recentlyViewedCount,
                       label: 'Viewed',
-                      color: AppColors.primaryGreen,
+                      color: AppColors.primaryOrange,
                     ),
                   ),
                 ],
@@ -377,10 +377,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
               width: 40,
               height: 40,
               decoration: BoxDecoration(
-                color: AppColors.paleGreen,
+                color: AppColors.paleOrange,
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: Icon(icon, color: AppColors.primaryGreen, size: 20),
+              child: Icon(icon, color: AppColors.primaryOrange, size: 20),
             ),
             title: Text(
               title,

@@ -87,7 +87,7 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
       await StorageService.saveBook(_book.copyWith(isSaved: true));
       if (!mounted) return;
       setState(() => _isSaved = true);
-      _showSnackBar(AppStrings.bookSaved, AppColors.primaryGreen);
+      _showSnackBar(AppStrings.bookSaved, AppColors.primaryOrange);
     }
     if (mounted) {
       setState(() => _isLoadingSave = false);
@@ -121,7 +121,7 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
             child: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: _isSaved ? AppColors.primaryGreen : AppColors.offWhite,
+                color: _isSaved ? AppColors.primaryOrange : AppColors.offWhite,
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Icon(
@@ -158,7 +158,7 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
                     book.author,
                     style: GoogleFonts.poppins(
                       fontSize: 15,
-                      color: AppColors.primaryGreen,
+                      color: AppColors.primaryOrange,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -210,7 +210,7 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
                           style: GoogleFonts.poppins(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: AppColors.primaryGreen,
+                            color: AppColors.primaryOrange,
                           ),
                         ),
                       ),
@@ -226,7 +226,7 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
                           return Container(
                             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                             decoration: BoxDecoration(
-                              color: AppColors.paleGreen,
+                              color: AppColors.paleOrange,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: Text(
@@ -234,7 +234,7 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
                               style: GoogleFonts.poppins(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
-                                color: AppColors.primaryGreen,
+                                color: AppColors.primaryOrange,
                               ),
                             ),
                           );
@@ -281,7 +281,7 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
             child: Container(
               height: 260,
               decoration: BoxDecoration(
-                color: AppColors.paleGreen,
+                color: AppColors.paleOrange,
                 borderRadius: BorderRadius.circular(18),
                 boxShadow: [
                   BoxShadow(
@@ -300,14 +300,14 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
                         placeholder: (context, url) => const Center(
                           child: CircularProgressIndicator(
                             strokeWidth: 2,
-                            valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryGreen),
+                            valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryOrange),
                           ),
                         ),
                         errorWidget: (context, url, error) =>
-                            const Icon(Icons.menu_book, size: 60, color: AppColors.primaryGreen),
+                            const Icon(Icons.menu_book, size: 60, color: AppColors.primaryOrange),
                       ),
                     )
-                  : const Icon(Icons.menu_book, size: 60, color: AppColors.primaryGreen),
+                  : const Icon(Icons.menu_book, size: 60, color: AppColors.primaryOrange),
             ),
           ),
           const SizedBox(width: 20),
@@ -380,7 +380,7 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Icon(icon, color: AppColors.primaryGreen, size: 18),
+        Icon(icon, color: AppColors.primaryOrange, size: 18),
         const SizedBox(width: 8),
         Expanded(
           child: Column(
@@ -427,14 +427,14 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
           icon: Icons.menu_book,
           value: book.pageCount != null ? '${book.pageCount}' : 'N/A',
           label: 'Pages',
-          color: AppColors.primaryGreen,
+          color: AppColors.primaryOrange,
         ),
         _buildDivider(),
         _buildStatItem(
           icon: Icons.person_outline,
           value: (book.author.contains(',') ? '${book.author.split(',').length}' : '1'),
           label: book.author.contains(',') ? 'Authors' : 'Author',
-          color: AppColors.primaryGreen,
+          color: AppColors.primaryOrange,
         ),
       ],
     );
@@ -496,10 +496,10 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
             width: 36,
             height: 36,
             decoration: BoxDecoration(
-              color: AppColors.paleGreen,
+              color: AppColors.paleOrange,
               borderRadius: BorderRadius.circular(12),
             ),
-            child: Icon(icon, color: AppColors.primaryGreen, size: 18),
+            child: Icon(icon, color: AppColors.primaryOrange, size: 18),
           ),
           const SizedBox(width: 12),
           Column(

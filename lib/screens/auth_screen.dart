@@ -107,7 +107,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         width: 48,
                         height: 48,
                         decoration: BoxDecoration(
-                          color: AppColors.primaryGreen,
+                          color: AppColors.primaryOrange,
                           borderRadius: BorderRadius.circular(16),
                         ),
                         child: const Icon(
@@ -122,7 +122,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         style: GoogleFonts.poppins(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
-                          color: AppColors.primaryGreen,
+                          color: AppColors.primaryOrange,
                         ),
                       ),
                     ],
@@ -198,7 +198,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         style: GoogleFonts.poppins(
                           fontSize: 13,
                           fontWeight: FontWeight.w500,
-                          color: AppColors.primaryGreen,
+                          color: AppColors.primaryOrange,
                         ),
                       ),
                     ),
@@ -250,7 +250,7 @@ class _AuthScreenState extends State<AuthScreen> {
                           style: GoogleFonts.poppins(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: AppColors.primaryGreen,
+                            color: AppColors.primaryOrange,
                           ),
                         ),
                       ),

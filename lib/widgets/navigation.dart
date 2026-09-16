@@ -76,7 +76,7 @@ class CustomBottomNavBar extends StatelessWidget {
         duration: const Duration(milliseconds: 200),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         decoration: BoxDecoration(
-          color: isActive ? AppColors.paleGreen : Colors.transparent,
+          color: isActive ? AppColors.paleOrange : Colors.transparent,
           borderRadius: BorderRadius.circular(20),
         ),
         child: Column(
@@ -84,7 +84,7 @@ class CustomBottomNavBar extends StatelessWidget {
           children: [
             Icon(
               isActive ? activeIcon : icon,
-              color: isActive ? AppColors.primaryGreen : AppColors.mediumGray,
+              color: isActive ? AppColors.primaryOrange : AppColors.mediumGray,
               size: 24,
             ),
             const SizedBox(height: 4),
@@ -93,7 +93,7 @@ class CustomBottomNavBar extends StatelessWidget {
               style: GoogleFonts.poppins(
                 fontSize: 11,
                 fontWeight: isActive ? FontWeight.w600 : FontWeight.w500,
-                color: isActive ? AppColors.primaryGreen : AppColors.mediumGray,
+                color: isActive ? AppColors.primaryOrange : AppColors.mediumGray,
               ),
             ),
           ],

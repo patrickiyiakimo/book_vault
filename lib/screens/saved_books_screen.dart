@@ -32,7 +32,7 @@ class SavedBooksScreen extends StatelessWidget {
           style: GoogleFonts.poppins(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: AppColors.darkGreen,
+            color: AppColors.darkOrange,
           ),
         ),
       ),
@@ -98,14 +98,14 @@ class SavedBooksScreen extends StatelessWidget {
                     onSaveToggle: () => onRemove(book),
                     trailing: Container(
                       decoration: BoxDecoration(
-                        color: AppColors.paleGreen.withOpacity(0.3),
+                        color: AppColors.paleOrange.withOpacity(0.3),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: IconButton(
                         onPressed: () => onRemove(book),
                         icon: const Icon(
                           Icons.bookmark_remove,
-                          color: AppColors.primaryGreen,
+                          color: AppColors.primaryOrange,
                           size: 20,
                         ),
                         tooltip: 'Remove',

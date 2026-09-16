@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+import '../constants/app_assets.dart';
 import '../constants/app_colors.dart';
 import '../constants/app_strings.dart';
 import '../screens/auth_screen.dart';
@@ -65,7 +67,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.primaryGreen,
+      backgroundColor: AppColors.primaryOrange,
       body: Container(
         decoration: const BoxDecoration(
           gradient: AppColors.splashGradient,
@@ -121,7 +123,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                           width: 160,
                           height: 160,
                           child: Container(
-                            padding: const EdgeInsets.all(20),
+                            padding: const EdgeInsets.all(16),
                             decoration: BoxDecoration(
                               color: AppColors.white,
                               borderRadius: BorderRadius.circular(30),
@@ -133,10 +135,11 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                                 ),
                               ],
                             ),
-                            child: const Icon(
-                              Icons.auto_stories,
-                              size: 80,
-                              color: AppColors.primaryGreen,
+                            child: Lottie.asset(
+                              AppAssets.splashBooks,
+                              fit: BoxFit.contain,
+                              repeat: true,
+                              animate: true,
                             ),
                           ),
                         ),

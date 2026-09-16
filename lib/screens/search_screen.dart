@@ -92,7 +92,7 @@ class _SearchScreenState extends State<SearchScreen> {
       SnackBar(
         content: Text(isSaved ? 'Book removed from saved' : 'Book saved successfully!'),
         behavior: SnackBarBehavior.floating,
-        backgroundColor: isSaved ? AppColors.mediumGray : AppColors.primaryGreen,
+        backgroundColor: isSaved ? AppColors.mediumGray : AppColors.primaryOrange,
       ),
     );
   }
@@ -128,7 +128,7 @@ class _SearchScreenState extends State<SearchScreen> {
             style: GoogleFonts.poppins(
               fontSize: 24,
               fontWeight: FontWeight.bold,
-              color: AppColors.darkGreen,
+              color: AppColors.darkOrange,
             ),
           ),
           const SizedBox(height: 12),
@@ -145,7 +145,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 fontSize: 15,
                 color: AppColors.mediumGray,
               ),
-              prefixIcon: const Icon(Icons.search, color: AppColors.primaryGreen, size: 22),
+              prefixIcon: const Icon(Icons.search, color: AppColors.primaryOrange, size: 22),
               suffixIcon: _isSearching
                   ? Padding(
                       padding: const EdgeInsets.all(14),
@@ -154,7 +154,7 @@ class _SearchScreenState extends State<SearchScreen> {
                         height: 18,
                         child: CircularProgressIndicator(
                           strokeWidth: 2,
-                          valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryGreen),
+                          valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryOrange),
                         ),
                       ),
                     )
@@ -179,7 +179,7 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(999),
-                borderSide: const BorderSide(color: AppColors.primaryGreen, width: 2),
+                borderSide: const BorderSide(color: AppColors.primaryOrange, width: 2),
               ),
               contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             ),
@@ -276,7 +276,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   decoration: BoxDecoration(
-                    color: AppColors.paleGreen,
+                    color: AppColors.paleOrange,
                     borderRadius: BorderRadius.circular(999),
                   ),
                   child: Text(
@@ -284,7 +284,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     style: GoogleFonts.poppins(
                       fontSize: 13,
                       fontWeight: FontWeight.w500,
-                      color: AppColors.primaryGreen,
+                      color: AppColors.primaryOrange,
                     ),
                   ),
                 ),

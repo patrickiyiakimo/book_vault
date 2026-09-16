@@ -10,11 +10,11 @@ class AppTheme {
       useMaterial3: true,
       brightness: Brightness.light,
       colorScheme: ColorScheme.fromSeed(
-        seedColor: AppColors.primaryGreen,
+        seedColor: AppColors.primaryOrange,
         brightness: Brightness.light,
-        primary: AppColors.primaryGreen,
+        primary: AppColors.primaryOrange,
         onPrimary: AppColors.white,
-        secondary: AppColors.lightGreen,
+        secondary: AppColors.lightOrange,
         onSecondary: AppColors.white,
         surface: AppColors.white,
         onSurface: AppColors.black,
@@ -43,7 +43,7 @@ class AppTheme {
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primaryGreen,
+          backgroundColor: AppColors.primaryOrange,
           foregroundColor: AppColors.white,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
           shape: RoundedRectangleBorder(
@@ -53,7 +53,7 @@ class AppTheme {
       ),
       snackBarTheme: const SnackBarThemeData(
         behavior: SnackBarBehavior.floating,
-        backgroundColor: AppColors.darkGreen,
+        backgroundColor: AppColors.darkOrange,
         contentTextStyle: TextStyle(color: AppColors.white),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(16)),
@@ -72,7 +72,7 @@ class AppTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
-          borderSide: const BorderSide(color: AppColors.primaryGreen, width: 2),
+          borderSide: const BorderSide(color: AppColors.primaryOrange, width: 2),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),

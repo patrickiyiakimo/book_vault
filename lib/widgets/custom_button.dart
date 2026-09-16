@@ -31,7 +31,7 @@ class PrimaryButton extends StatelessWidget {
           ? OutlinedButton(
               onPressed: isLoading ? null : onPressed,
               style: OutlinedButton.styleFrom(
-                side: const BorderSide(color: AppColors.primaryGreen, width: 2),
+                side: const BorderSide(color: AppColors.primaryOrange, width: 2),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(999),
                 ),
@@ -43,14 +43,14 @@ class PrimaryButton extends StatelessWidget {
                       width: 20,
                       child: CircularProgressIndicator(
                         strokeWidth: 2,
-                        valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryGreen),
+                        valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryOrange),
                       ),
                     )
                   : Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         if (icon != null) ...[
-                          Icon(icon, color: AppColors.primaryGreen),
+                          Icon(icon, color: AppColors.primaryOrange),
                           const SizedBox(width: 8),
                         ],
                         Text(
@@ -58,7 +58,7 @@ class PrimaryButton extends StatelessWidget {
                           style: GoogleFonts.poppins(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
-                            color: AppColors.primaryGreen,
+                            color: AppColors.primaryOrange,
                           ),
                         ),
                       ],
@@ -67,7 +67,7 @@ class PrimaryButton extends StatelessWidget {
           : ElevatedButton(
               onPressed: isLoading ? null : onPressed,
               style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primaryGreen,
+                backgroundColor: AppColors.primaryOrange,
                 foregroundColor: AppColors.white,
                 elevation: 0,
                 shape: RoundedRectangleBorder(
@@ -137,7 +137,7 @@ class IconButtonWidget extends StatelessWidget {
       ),
       child: IconButton(
         onPressed: onPressed,
-        icon: Icon(icon, color: color ?? AppColors.primaryGreen, size: size ?? 24),
+        icon: Icon(icon, color: color ?? AppColors.primaryOrange, size: size ?? 24),
       ),
     );
   }
@@ -157,7 +157,7 @@ class FloatingSaveButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: isSaved ? AppColors.primaryGreen : AppColors.white,
+        color: isSaved ? AppColors.primaryOrange : AppColors.white,
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
@@ -171,7 +171,7 @@ class FloatingSaveButton extends StatelessWidget {
         onPressed: onPressed,
         icon: Icon(
           isSaved ? Icons.bookmark : Icons.bookmark_border,
-          color: isSaved ? AppColors.white : AppColors.primaryGreen,
+          color: isSaved ? AppColors.white : AppColors.primaryOrange,
           size: 22,
         ),
       ),

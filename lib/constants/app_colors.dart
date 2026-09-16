@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  // Primary Colors - soft pastel mint
-  static const Color primaryGreen = Color(0xFF6FA98E);
-  static const Color darkGreen = Color(0xFF4E8066);
-  static const Color lightGreen = Color(0xFF93C2A8);
-  static const Color accentGreen = Color(0xFFB3D8BF);
-  static const Color paleGreen = Color(0xFFE3F0E4);
+  // Primary Colors - soft warm orange
+  static const Color primaryOrange = Color(0xFFE08A4B);
+  static const Color darkOrange = Color(0xFFB96A35);
+  static const Color lightOrange = Color(0xFFEFAB7C);
+  static const Color accentOrange = Color(0xFFF6C79E);
+  static const Color paleOrange = Color(0xFFFCEADB);
 
   // Neutral Colors - warm cream
   static const Color white = Color(0xFFFFFFFF);
@@ -29,18 +29,18 @@ class AppColors {
   static const LinearGradient primaryGradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [darkGreen, primaryGreen, lightGreen],
+    colors: [darkOrange, primaryOrange, lightOrange],
   );
 
   static const LinearGradient splashGradient = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
-    colors: [darkGreen, primaryGreen],
+    colors: [darkOrange, primaryOrange],
   );
 
   static const LinearGradient cardGradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [Color(0xFFF1F8E9), Color(0xFFE8F5E9)],
+    colors: [Color(0xFFFFF4E8), Color(0xFFFDEBDC)],
   );
 }

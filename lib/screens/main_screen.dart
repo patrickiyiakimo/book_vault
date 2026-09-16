@@ -114,7 +114,7 @@ class _MainScreenState extends State<MainScreen> {
           isSaved ? AppStrings.bookRemoved : AppStrings.bookSaved,
         ),
         behavior: SnackBarBehavior.floating,
-        backgroundColor: isSaved ? AppColors.mediumGray : AppColors.darkGreen,
+        backgroundColor: isSaved ? AppColors.mediumGray : AppColors.darkOrange,
         duration: const Duration(seconds: 2),
       ),
     );
@@ -206,7 +206,7 @@ class _MainScreenState extends State<MainScreen> {
                         style: GoogleFonts.poppins(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
-                          color: AppColors.darkGreen,
+                          color: AppColors.darkOrange,
                         ),
                       ),
                       Text(
@@ -232,7 +232,7 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                       child: const Icon(
                         Icons.search,
-                        color: AppColors.primaryGreen,
+                        color: AppColors.primaryOrange,
                         size: 22,
                       ),
                     ),
@@ -262,7 +262,7 @@ class _MainScreenState extends State<MainScreen> {
           children: [
             const Icon(
               Icons.bookmarks_outlined,
-              color: AppColors.primaryGreen,
+              color: AppColors.primaryOrange,
               size: 22,
             ),
             if (_savedBooks.isNotEmpty)
@@ -272,7 +272,7 @@ class _MainScreenState extends State<MainScreen> {
                 child: Container(
                   padding: const EdgeInsets.all(4),
                   decoration: const BoxDecoration(
-                    color: AppColors.primaryGreen,
+                    color: AppColors.primaryOrange,
                     shape: BoxShape.circle,
                   ),
                   child: Text(
@@ -358,7 +358,7 @@ class _MainScreenState extends State<MainScreen> {
             gradient: AppColors.primaryGradient,
             boxShadow: [
               BoxShadow(
-                color: AppColors.primaryGreen.withOpacity(0.25),
+                color: AppColors.primaryOrange.withOpacity(0.25),
                 blurRadius: 24,
                 offset: const Offset(0, 10),
               ),
@@ -411,7 +411,7 @@ class _MainScreenState extends State<MainScreen> {
                               style: GoogleFonts.poppins(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w700,
-                                color: AppColors.darkGreen,
+                                color: AppColors.darkOrange,
                               ),
                             ),
                           ),
@@ -456,7 +456,7 @@ class _MainScreenState extends State<MainScreen> {
                               style: GoogleFonts.poppins(
                                 fontSize: 13,
                                 fontWeight: FontWeight.w600,
-                                color: AppColors.darkGreen,
+                                color: AppColors.darkOrange,
                               ),
                             ),
                           ),
@@ -488,10 +488,10 @@ child: Container(
                                     book.thumbnail!,
                                     fit: BoxFit.cover,
                                     errorBuilder: (context, error, stack) =>
-                                        const Icon(Icons.menu_book, color: AppColors.primaryGreen, size: 40),
+                                        const Icon(Icons.menu_book, color: AppColors.primaryOrange, size: 40),
                                   ),
                                 )
-                              : const Icon(Icons.menu_book, color: AppColors.primaryGreen, size: 40),
+                              : const Icon(Icons.menu_book, color: AppColors.primaryOrange, size: 40),
                         ),
                       ),
                     ),
@@ -574,12 +574,12 @@ return Padding(
                     width: 40,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: AppColors.paleGreen,
+                      color: AppColors.paleOrange,
                       borderRadius: BorderRadius.circular(14),
                     ),
                     child: Icon(
                       icons[index % icons.length],
-                      color: AppColors.primaryGreen,
+                      color: AppColors.primaryOrange,
                       size: 22,
                     ),
                   ),
@@ -748,7 +748,7 @@ class _CategoryBooksScreenState extends State<_CategoryBooksScreen> {
                       SnackBar(
                         content: Text(isSaved ? 'Book removed from saved' : 'Book saved successfully!'),
                         behavior: SnackBarBehavior.floating,
-                        backgroundColor: isSaved ? AppColors.mediumGray : AppColors.primaryGreen,
+                        backgroundColor: isSaved ? AppColors.mediumGray : AppColors.primaryOrange,
                       ),
                     );
                   }
