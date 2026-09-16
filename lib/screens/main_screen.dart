@@ -106,7 +106,18 @@ class _MainScreenState extends State<MainScreen> {
       await StorageService.saveBook(book.copyWith(isSaved: true));
       _savedStatus[book.id] = true;
     }
-    if (mounted) setState(() {});
+    if (!mounted) return;
+    setState(() {});
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          isSaved ? AppStrings.bookRemoved : AppStrings.bookSaved,
+        ),
+        behavior: SnackBarBehavior.floating,
+        backgroundColor: isSaved ? AppColors.mediumGray : AppColors.darkGreen,
+        duration: const Duration(seconds: 2),
+      ),
+    );
   }
 
   Future<void> _refreshSavedBooks() async {
