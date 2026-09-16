@@ -352,7 +352,7 @@ class _MainScreenState extends State<MainScreen> {
       child: GestureDetector(
         onTap: () => _openBookDetails(book),
         child: Container(
-          height: 180,
+          height: 200,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24),
             gradient: AppColors.primaryGradient,
@@ -415,7 +415,7 @@ class _MainScreenState extends State<MainScreen> {
                               ),
                             ),
                           ),
-                          const SizedBox(height: 10),
+                          const SizedBox(height: 8),
                           Flexible(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -444,7 +444,7 @@ class _MainScreenState extends State<MainScreen> {
                               ],
                             ),
                           ),
-                          const SizedBox(height: 10),
+                          const SizedBox(height: 8),
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                             decoration: BoxDecoration(
