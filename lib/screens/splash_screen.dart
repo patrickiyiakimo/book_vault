@@ -83,7 +83,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                   height: 250,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: AppColors.white.withOpacity(0.05),
+                    color: AppColors.white.withValues(alpha: 0.05),
                   ),
                 ),
               ),
@@ -95,7 +95,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                   height: 180,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: AppColors.white.withOpacity(0.08),
+                    color: AppColors.white.withValues(alpha: 0.08),
                   ),
                 ),
               ),
@@ -107,7 +107,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                   height: 200,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: AppColors.white.withOpacity(0.06),
+                    color: AppColors.white.withValues(alpha: 0.06),
                   ),
                 ),
               ),
@@ -129,7 +129,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                               borderRadius: BorderRadius.circular(30),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.black.withOpacity(0.2),
+                                  color: Colors.black.withValues(alpha: 0.2),
                                   blurRadius: 30,
                                   offset: const Offset(0, 10),
                                 ),
@@ -165,7 +165,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                         AppStrings.appTagline,
                         style: TextStyle(
                           fontSize: 16,
-                          color: AppColors.white.withOpacity(0.9),
+                          color: AppColors.white.withValues(alpha: 0.9),
                           letterSpacing: 0.5,
                         ),
                       ),

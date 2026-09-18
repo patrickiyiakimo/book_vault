@@ -33,7 +33,7 @@ class BookCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: AppColors.black.withOpacity(0.06),
+              color: AppColors.black.withValues(alpha: 0.06),
               blurRadius: 16,
               offset: const Offset(0, 4),
             ),
@@ -73,11 +73,11 @@ class BookCard extends StatelessWidget {
                         child: Container(
                           padding: const EdgeInsets.all(6),
                           decoration: BoxDecoration(
-                            color: book.isSaved ? AppColors.primaryOrange : AppColors.white.withOpacity(0.92),
+                            color: book.isSaved ? AppColors.primaryOrange : AppColors.white.withValues(alpha: 0.92),
                             shape: BoxShape.circle,
                             boxShadow: [
                               BoxShadow(
-                                color: AppColors.black.withOpacity(0.1),
+                                color: AppColors.black.withValues(alpha: 0.1),
                                 blurRadius: 4,
                                 offset: const Offset(0, 1),
                               ),
@@ -137,7 +137,7 @@ class BookCard extends StatelessWidget {
           width: 56,
           height: 56,
           decoration: BoxDecoration(
-            color: AppColors.white.withOpacity(0.7),
+            color: AppColors.white.withValues(alpha: 0.7),
             shape: BoxShape.circle,
           ),
           child: const Icon(
@@ -177,7 +177,7 @@ class BookListTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(18),
           boxShadow: [
             BoxShadow(
-              color: AppColors.black.withOpacity(0.05),
+              color: AppColors.black.withValues(alpha: 0.05),
               blurRadius: 12,
               offset: const Offset(0, 3),
             ),

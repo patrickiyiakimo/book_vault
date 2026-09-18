@@ -358,7 +358,7 @@ class _MainScreenState extends State<MainScreen> {
             gradient: AppColors.primaryGradient,
             boxShadow: [
               BoxShadow(
-                color: AppColors.primaryOrange.withOpacity(0.25),
+                color: AppColors.primaryOrange.withValues(alpha: 0.25),
                 blurRadius: 24,
                 offset: const Offset(0, 10),
               ),
@@ -374,7 +374,7 @@ class _MainScreenState extends State<MainScreen> {
                   height: 120,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: AppColors.white.withOpacity(0.1),
+                    color: AppColors.white.withValues(alpha: 0.1),
                   ),
                 ),
               ),
@@ -386,7 +386,7 @@ class _MainScreenState extends State<MainScreen> {
                   height: 100,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: AppColors.white.withOpacity(0.08),
+                    color: AppColors.white.withValues(alpha: 0.08),
                   ),
                 ),
               ),
@@ -403,7 +403,7 @@ class _MainScreenState extends State<MainScreen> {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                             decoration: BoxDecoration(
-                              color: AppColors.white.withOpacity(0.85),
+                              color: AppColors.white.withValues(alpha: 0.85),
                               borderRadius: BorderRadius.circular(999),
                             ),
                             child: Text(
@@ -438,7 +438,7 @@ class _MainScreenState extends State<MainScreen> {
                                   overflow: TextOverflow.ellipsis,
                                   style: GoogleFonts.poppins(
                                     fontSize: 13,
-                                    color: AppColors.white.withOpacity(0.9),
+                                    color: AppColors.white.withValues(alpha: 0.9),
                                   ),
                                 ),
                               ],
@@ -475,7 +475,7 @@ child: Container(
                              borderRadius: BorderRadius.circular(14),
                              boxShadow: [
                                BoxShadow(
-                                 color: AppColors.black.withOpacity(0.18),
+                                 color: AppColors.black.withValues(alpha: 0.18),
                                  blurRadius: 16,
                                  offset: const Offset(4, 8),
                                ),
@@ -561,7 +561,7 @@ return Padding(
                 borderRadius: BorderRadius.circular(18),
                 boxShadow: [
                   BoxShadow(
-                    color: AppColors.black.withOpacity(0.04),
+                    color: AppColors.black.withValues(alpha: 0.04),
                     blurRadius: 10,
                     offset: const Offset(0, 3),
                   ),

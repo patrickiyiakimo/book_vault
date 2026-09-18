@@ -268,7 +268,7 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
         borderRadius: const BorderRadius.vertical(bottom: Radius.circular(28)),
         boxShadow: [
           BoxShadow(
-            color: AppColors.black.withOpacity(0.06),
+            color: AppColors.black.withValues(alpha: 0.06),
             blurRadius: 20,
             offset: const Offset(0, 6),
           ),
@@ -285,7 +285,7 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
                 borderRadius: BorderRadius.circular(18),
                 boxShadow: [
                   BoxShadow(
-                    color: AppColors.black.withOpacity(0.12),
+                    color: AppColors.black.withValues(alpha: 0.12),
                     blurRadius: 20,
                     offset: const Offset(6, 10),
                   ),

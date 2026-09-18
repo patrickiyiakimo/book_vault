@@ -98,7 +98,7 @@ class SavedBooksScreen extends StatelessWidget {
                     onSaveToggle: () => onRemove(book),
                     trailing: Container(
                       decoration: BoxDecoration(
-                        color: AppColors.paleOrange.withOpacity(0.3),
+                        color: AppColors.paleOrange.withValues(alpha: 0.3),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: IconButton(
